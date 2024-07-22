@@ -7,90 +7,77 @@ import Instagram from "@/public/InstagramLogo.svg";
 
 const Index = () => {
   return (
-    <div className="Footer w-[1519px] h-[334px] px-[195px] py-10 bg-neutral-700 flex-col justify-start items-center gap-[30px] inline-flex">
-      <div className="FooterInfo justify-between items-start inline-flex">
-        <div className="NftMarketplaceInfo w-[327.41px] pr-[84px] flex-col justify-start items-start gap-[30px] inline-flex">
-          <div className="Logo w-[243.41px] h-8 relative">
-            <Image src={HeaderLogo} alt="img" />
-            <div className="Storefront w-8 h-8 left-0 top-0 absolute"></div>
+    <div className="Footer w-full max-w-[1519px] h-auto px-5 py-10 bg-neutral-700 flex flex-col justify-start items-center gap-8 sm:gap-4">
+      <div className="FooterInfo w-full flex flex-col sm:flex-row sm:justify-between gap-8 sm:gap-4">
+        <div className="NftMarketplaceInfo flex flex-col gap-8 sm:gap-4 w-full sm:w-1/3">
+          <div className="Logo w-full max-w-[243.41px] h-8 relative">
+            <Image src={HeaderLogo} alt="Logo" layout="fill" objectFit="contain" />
           </div>
-          <div className="AdditionalInfo flex-col justify-start items-start gap-5 flex">
-            <div className="NftMarketplaceUiCreatedWithAnimaForFigma w-[238px] text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+          <div className="AdditionalInfo flex flex-col gap-5">
+            <div className="NftMarketplaceUiCreatedWithAnimaForFigma text-stone-300 text-base font-normal">
               NFT marketplace UI created with Anima for Figma.
             </div>
-            <div className="CommunityInfo flex-col justify-start items-start gap-[15px] flex">
-              <div className="JoinOurCommunity w-[238px] h-[18px] text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+            <div className="CommunityInfo flex flex-col gap-4">
+              <div className="JoinOurCommunity text-stone-300 text-base font-normal">
                 Join our community
               </div>
-              <div className="Icons justify-start items-start gap-2.5 inline-flex">
+              <div className="Icons flex gap-2.5">
                 <div className="Discordlogo cursor-pointer w-8 h-8 relative">
-                  <Image src={Discard} alt="img" />
+                  <Image src={Discard} alt="Discord" layout="fill" objectFit="contain" />
                 </div>
                 <div className="Youtubelogo cursor-pointer w-8 h-8 relative">
-                  <Image src={Youtube} alt="img" />
+                  <Image src={Youtube} alt="YouTube" layout="fill" objectFit="contain" />
                 </div>
                 <div className="Twitterlogo cursor-pointer w-8 h-8 relative">
-                  <Image src={Twitter} alt="img" />
+                  <Image src={Twitter} alt="Twitter" layout="fill" objectFit="contain" />
                 </div>
                 <div className="Instagramlogo cursor-pointer w-8 h-8 relative">
-                  <Image src={Youtube} alt="img"/>
+                  <Image src={Instagram} alt="Instagram" layout="fill" objectFit="contain" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="Explore w-60 flex-col justify-start items-start gap-[25px] inline-flex">
-          <div className="Explore  text-white text-[22px] font-bold font-['Space Mono'] capitalize leading-9">
+        <div className="Explore flex flex-col gap-5 sm:w-1/3">
+          <div className="text-white text-lg font-bold capitalize">
             Explore
           </div>
-          <div className="Pages cursor-pointer flex-col justify-start items-start gap-5 flex">
-            <div className="Marketplace text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+          <div className="Pages flex flex-col gap-5">
+            <div className="Marketplace text-stone-300 text-base font-normal">
               Marketplace
             </div>
-            <div className="Rankings cursor-pointer text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+            <div className="Rankings cursor-pointer text-stone-300 text-base font-normal">
               Rankings
             </div>
-            <div className="ConnectAWallet cursor-pointer text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+            <div className="ConnectAWallet cursor-pointer text-stone-300 text-base font-normal">
               Connect a wallet
             </div>
           </div>
         </div>
-        <div className="Subscribe flex-col justify-start items-start gap-[25px] inline-flex">
-          <div className="JoinOurWeeklyDigest text-white text-[22px] font-bold font-['Space Mono'] capitalize leading-9">
+        <div className="Subscribe flex flex-col gap-5 sm:w-1/3">
+          <div className="JoinOurWeeklyDigest text-white text-lg font-bold capitalize">
             Join our weekly digest
           </div>
-          <div className="SubscribeFormInfo flex-col justify-start items-start gap-5 flex">
-            <div className="GetExclusivePromotionsUpdatesStraightToYourInbox w-[330px] text-stone-300 text-base font-normal font-['Work Sans'] leading-snug">
+          <div className="SubscribeFormInfo flex flex-col gap-5">
+            <div className="GetExclusivePromotionsUpdatesStraightToYourInbox text-stone-300 text-base font-normal">
               Get exclusive promotions & updates straight to your inbox.
             </div>
-            {/* <div className="SubscribeForm w-[420px] h-[60px] pl-5 py-4 bg-white rounded-[20px] justify-start items-center gap-3 inline-flex">
-              <div className="EnterYourEmailHere grow shrink basis-0 text-zinc-800 text-base font-normal font-['Work Sans'] leading-snug">
-                Enter your email here
-              </div>
-              <div className="Button w-[179px] px-[50px] py-5 bg-purple-500 rounded-[20px] justify-end items-center gap-3 flex">
-                <div className="Button text-center text-white text-base font-semibold font-['Work Sans'] leading-snug">
-                  Subscribe
-                </div>
-              </div>
-            </div> */}
-            <div className="SubscribeForm self-stretch h-[60px] pl-5 py-4 bg-white rounded-[20px] justify-start items-center gap-3 inline-flex">
+            <div className="SubscribeForm flex items-center bg-white rounded-2xl p-2">
               <input
                 type="email"
                 placeholder="Enter your email here"
-                className="EnterYourEmailHere grow shrink basis-0 text-zinc-800 text-base font-normal font-['Work Sans'] leading-snug outline-none bg-transparent"
+                className="flex-1 text-zinc-800 text-base font-normal outline-none px-3 py-2 bg-transparent"
               />
-              <div className="Button w-[211px] px-[50px] py-5 cursor-pointer bg-purple-500 rounded-[20px] justify-center items-center gap-3 flex">
-                <div className="Button text-center text-white text-base font-semibold font-['Work Sans'] leading-snug">
-                  Subscribe
-                </div>
-              </div>
+              <button className="Button bg-purple-500 text-white text-base font-semibold px-6 py-2 rounded-2xl ml-2">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="Frame239 h-[33px] flex-col justify-start items-start gap-5 flex">
-        <div className="Divider self-stretch h-[0px] border border-zinc-500"></div>
-        <div className="NftMarketUseThisTemplateFreely self-stretch text-stone-300 text-xs font-normal font-['Work Sans'] leading-[13.20px]">
+      <div className="Frame239 w-full flex flex-col gap-5">
+        <div className="Divider h-[1px] border border-zinc-500"></div>
+        <div className="NftMarketUseThisTemplateFreely text-stone-300 text-xs">
           Ⓒ NFT Market. Use this template freely.
         </div>
       </div>
@@ -99,3 +86,4 @@ const Index = () => {
 };
 
 export default Index;
+

@@ -16,7 +16,7 @@ import Ghiblear from '@/public/ghiblear.png'
 
 const Index = () => {
   return (
-    <div className="TopRatedArtists w-[1519px] h-[1195px] px-[195px] py-20 bg-zinc-800 flex-col justify-start items-center gap-[60px] inline-flex">
+    <div className="TopRatedArtists w-[1381px] h-[1195px] px-[195px] py-20 bg-zinc-800 flex-col justify-start items-center gap-[60px] inline-flex">
       <div className="SectionHeadlineButton w-[1050px] h-[91px] justify-start items-end gap-[100px] inline-flex">
         <div className="SectionHeadline w-[703px] flex-col justify-start items-start gap-2.5 inline-flex">
           <div className="Heading self-stretch justify-start items-start gap-2.5 inline-flex">
